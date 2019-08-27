@@ -45,12 +45,13 @@
   background-color: black;
   color: white;
   border-radius: 4em; 
-  grid-column: 12 / 14;
+  grid-column: 11 / 13;
   grid-row: 5/6;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 
 .time,
 .days{
@@ -76,18 +77,22 @@
 }
 
 .container-one-content{
-    grid-column: 11 / 14;
-    grid-row :9/ -1;
+    grid-column: 11 / 15;
+    grid-row :8/ -1;
 }
 
 .container-one-content > p {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   line-height: 1.7em;
 }
 
 .container-one-content > button{
   margin-left: 10em;
+  padding: 1em;
+  border-radius: 4em;
+  background-color: #CFD5D5;
+
 }
 
 
