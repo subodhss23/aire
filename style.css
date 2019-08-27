@@ -10,6 +10,7 @@
   grid-template-rows: repeat(12,100px);
   height: 160vh;
   font-family: 'Roboto Mono', monospace;
+  background-color: whitesmoke;
 }
 
 
@@ -52,6 +53,12 @@
   align-items: center;
 }
 
+.button:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
 
 .time,
 .days{
@@ -91,13 +98,15 @@
   margin-left: 10em;
   padding: 1em;
   border-radius: 4em;
-  background-color: white;
+  background-color: black;
+  color: white;
 }
 
 
 .container-one-content > button:hover{
-  background-color: black;
-  color: white;
+  background-color:white;
+  color:black;
+  cursor: pointer;
 }
 .girl{
   background-image: url('./female.jpeg');
@@ -128,6 +137,20 @@
   grid-row: 5/8;
 }
 
+.container-two-article > button{
+  margin-left: 10em;
+  padding: 1em;
+  border-radius: 4em;
+  background-color: black;
+  color: white;
+}
+
+.container-two-article > button:hover{
+  background-color:white;
+  color:black;
+  cursor: pointer;
+}
+
 .container-two-right-img{
   /* background:url('./cbd.jpeg') no-repeat center center ; */
   background-image: url('./cbd.jpeg');
@@ -136,7 +159,7 @@
   background-repeat: no-repeat;
   z-index: 1;
   grid-column: 11/14;
-  grid-row: 2 / 6;  
+  grid-row: 4 / 9;  
 }
 
 .container-two-left-bottom{
@@ -151,14 +174,35 @@
 
 
 .container-two-right-bottom{
-  grid-column: 11/14;
-  grid-row: 9 /-1;
+  grid-column: 7/10;
+  grid-row: 7 /10;
 
 }
 
 .container-two-right-bottom > img{
-  height: 100%;
+  height: 180%;
   width: 100%;
+}
+
+
+
+@media(max-width: 700px){
+  .container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    text-align: center;
+  }
+
+  .container-one{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-two{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 
